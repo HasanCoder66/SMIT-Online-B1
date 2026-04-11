@@ -1,0 +1,86 @@
+/* Universal Selector  */
+
+*{
+    /* background-color: #292930;
+    color: white; */
+    /* margin: 0;
+    padding: 0; */
+}
+
+
+
+/* Type Selector */
+
+
+body {
+    /* background-color: aqua; */
+    
+   
+}
+
+
+header {
+    /* background-color: #292930; */
+}
+
+/* li {
+    color: red;
+}
+
+
+
+#about {
+    background-color: blue;
+    color: white;
+}
+
+
+.about-class {
+    background-color: cadetblue;
+    color: white;
+}
+
+#title {
+    font-style: italic;
+}
+
+
+
+.cardParent > p > span {
+font-size: 25px;
+}
+
+#footer > h1 {
+    background-color: red;
+} */
+
+
+
+.paragraph {
+    /* text-transform: uppercase; */
+    /* font-size: 26px; */
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    /* color: #292930; */
+    /* background-color: #292930;
+    color: white; */
+    /* font-family: monospace; */
+    background-color: red;
+    /* text-align: center; */
+}
+
+
+
+ul {
+    /* background-color: red; */
+    /* color: white; */
+    /* border-radius: 10px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border: 1px solid black; */
+    /* box-shadow: 5px 5px 5px red; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+ul > li {
+    /* color: black; */
+}

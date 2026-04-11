@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #292930;
+    color: white; */
+}
+
+.container {
+    background-color: yellow;
+    height: 500px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.child {
+    background-color: red;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 250px;
+    /* margin-right: 20px; */
+}
