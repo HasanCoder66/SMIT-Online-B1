@@ -27,7 +27,7 @@ ul {
 li {
   list-style-type: none;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -38,10 +38,10 @@ h2 {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #292930;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: none;
     border-radius: 5px;
@@ -52,4 +52,38 @@ button:hover {
     background-color: #5858ca;
     
  transition: all 0.5s ease;
+}
+
+.hidden {
+    display: none;
+    font-size: 24px;
+}
+
+@media screen and (max-width:768px){
+    .hidden {
+        display: block;
+    }
+    h2 {
+        display: none;
+    } 
+    ul {
+        display: none;
+    }
+
+    
+}
+
+.toggleNav > ul {
+    display: flex ;
+    flex-direction: column;
+    background-color: #292930;
+    padding: 0px 20px;
+    gap: 20px;
+    color: white;
+    
+}
+
+#btnBox {
+    display: flex;
+    gap: 10px;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,6 +12,8 @@
     <!-- my navbar -->
     <nav>
         <h2>Muhammad Hasan</h2>
+        <i class="fa-solid fa-bars hidden"></i>
+
 
         <ul>
             <li>Home</li>
@@ -19,11 +22,20 @@
             <li>Services</li>
         </ul>
 
-        <div>
+        <div id="btnBox">
             <button>Signup</button>
             <button>Login</button>
         </div>
     </nav>
+
+    <div class="toggleNav hidden">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+    </div>
 
 </body>
 </html>
