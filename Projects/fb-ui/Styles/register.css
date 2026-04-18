@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.header-section > img {
+    width: 100px;
+    height: 50px;
+}
+
+.header-section > h2 {
+   margin-bottom: 3px;
+}
+
+.header-section > p {
+    font-size: 16px;
+ } 
+
+ .input-names {
+ 
+    width: 100%;
+    /* height: 100px; */
+    margin-top: 15px;
+ }
+
+ .input-names > p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 3px;
+ }
+
+ .inputBox {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .inputBox > div > input {
+    width: 280px;
+    height:50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-left: 15px;
+ }
+
+ .inputBox > div > input:focus, .inputBox > input {
+    outline: none;
+ }
+
+ #name-para {
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: normal;
+ }
+
+
+ /* dob section */
+
+ .dob-section, .gender {
+    margin-top: 10px;
+    /* background-color: black; */
+ }
+  .dob-section > h2, .gender > h2, .email-address > h2 {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+
+ .dropdown{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ select {
+    width: 170px;
+    height:50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+
+ }
+
+
+ .gender > select {
+    width: 100%;
+ 
+ }
+
+ .email-address{
+    width: 100%;
+    margin-top: 15px;
+ }
+
+
+ .inputBox > input{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-left: 15px;
+ }
+
+ .btnBox {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .btnBox > #submit {
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0064E0;
+    color: white;
+    
+ }
+ .btnBox > a > #already-account {
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    color: black; 
+    border: 1px solid rgb(188, 177, 177);
+    width: 100%;
+ }
+
+ .btnBox > a > #already-account:hover{
+    background-color: #D0D3D6;
+    transition: all 1s;
+ }

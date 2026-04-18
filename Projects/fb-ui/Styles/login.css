@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    display: flex;
+    /* flex-direction: column; */
+    padding: 10px;
+    width: 90%;
+
+}
+
+.left-area {
+    width: 60%;
+}
+.right-area {
+    width: 40%;
+
+}
+
+.left-area {
+    display: flex;
+    justify-content: end;
+}
+
+.left-area > img {
+height: auto;
+width: 800px;
+}
+
+.right-area {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.loginForm {
+    width: 100%;
+}
+
+.email-address{
+    width: 80%;
+    margin-top: 15px;
+    
+ }
+
+ .inputBox > input{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-left: 15px;
+ }
+
+
+ .btnBox {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .btnBox > #submit {
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0064E0;
+    color: white;
+    width: 80%;
+    margin-top: 15px;
+    
+ }
+ .btnBox > a > #already-account {
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    color: black; 
+    /* border: 1px solid rgb(188, 177, 177); */
+    width: 80%;
+ }
+
+ .btnBox > a > #already-account:hover{
+    background-color: #D0D3D6;
+    transition: all 0.3s;
+ }
+
+ .btnBox > a > #already-account-2 {
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    color: #0064E0; 
+    border: 1px solid #0064E0;
+    width: 80%;
+ }
+
+ .btnBox > a > #already-account-2:hover{
+    background-color: #D0D3D6;
+    transition: all 0.3s;
+ }
+ .footer-section {
+    margin-left: 200px;
+    margin-top: 15px;
+ }
+
+ .footer-section > img {
+    width: 100px;
+    height: 50px;
+}
