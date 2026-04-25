@@ -150,3 +150,83 @@ body {
     background-color: #D0D3D6;
     transition: all 1s;
  }
+
+
+
+
+
+
+ /* 0 > 575px screen tak media query active rahy gi... */
+ @media only screen and (max-width:575px){
+
+   .container {
+      width: 100%;
+      height: auto;
+  }
+
+  .header-section > h2 , .header-section > p {
+   margin-bottom: 15px;
+  }
+
+  .dob-section > h2, .gender > h2, .email-address > h2 {
+   margin-top: 15px;
+  }
+
+  #mb-5{
+   margin-bottom: 50px;
+  }
+    .input-names{
+   width: 100%;
+  }
+
+  .input-names > .inputBox{
+   flex-direction: column;
+   gap: 10px;
+  }
+
+  .inputBox > div{
+   height: 50px;
+   width: 100%;
+   border-radius: 10px;
+   border: 1px solid gray;
+}
+
+
+.inputBox > div > input {
+   width: 100%;
+   height:100%;
+   border-radius: 10px;
+   border: 1px solid gray;
+   padding-left: 15px;
+   border: none;
+}
+
+
+.dob-section{
+  width: 100%;
+}
+
+.dropdown{
+   flex-direction: column;
+   width: 100%;
+  
+}
+
+select {
+   width: 100%;
+   height:50px;
+   border-radius: 10px;
+   border: 1px solid gray;
+   outline: none;
+   margin-bottom: 5px;
+
+}
+
+ }
+
+ /* @media only screen and (min-width:1200px){
+   .container{
+      background-color: black;
+   }
+ } */
+ /* min-width 1200 > 2560   */

@@ -132,3 +132,94 @@ width: 800px;
     width: 100px;
     height: 50px;
 }
+
+.hidden {
+    display: none;
+}
+
+
+/* 476px > 1024px  ye meri media query kaam kery gi  */
+@media only screen and (max-width:1024px){
+    .left-area {
+        width: 50%;
+    }
+    .left-area > img {
+        height: auto;
+        width: 400px;
+        object-fit: contain;
+        }
+
+        .right-area {
+            width: 50%;
+        
+        }
+
+        .loginForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btnBox {
+            width: 100%;
+            align-items: center;
+        }
+        .btnBox > a > #already-account {
+            width: 150px;
+        }
+
+        .btnBox > a > #already-account-2{
+            width: 100%;
+            padding: 0px 20px;
+        }
+        .footer-section {
+            margin-left: 0px;
+            margin-top: 15px;
+        }
+}
+
+
+/* 0px > 475px */
+@media only screen and (max-width:475px){
+    .left-area {
+        display: none;
+    }
+
+    .right-area {
+        width: 100%;
+        padding: 0px;
+        
+    }
+    .email-address{
+        width: 100%;
+        margin-top: 15px;
+        
+     }
+     .btnBox {
+        width: 100%;
+     }
+     .btnBox > a {
+        width: 100%;
+     }
+
+     .btnBox > a > #already-account {
+        width: 100%;
+    }
+
+    .btnBox > #submit {
+        width: 100%;
+    }
+    .loginForm > h2 {
+        display: none;
+    }
+
+    .hidden{
+        display: block;
+    }
+
+    .loginForm > img {
+        width: 300px;
+        height: 120px;
+        background-position: center;
+        background-size: cover;
+    }
+}
