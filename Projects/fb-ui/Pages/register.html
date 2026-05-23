@@ -24,8 +24,8 @@
             </p>
 
             <div class="inputBox">
-                <div><input type="text" placeholder="Enter your Firstname"></div>
-                <div><input type="text" placeholder="Enter your Surname"></div>
+                <div><input  type="text" placeholder="Enter your Firstname" id="firstName"></div>
+                <div><input  type="text" placeholder="Enter your Surname" id="surName"></div>
             </div>
 
             <p id="name-para">What's your name?</p>
@@ -37,7 +37,8 @@
             </h2>
 
             <div class="dropdown">
-                <select name="month">
+                <select name="month" id="month"> 
+                    <option value="" disabled selected>Select your month </option>
                     <option value="01">January</option>
                     <option value="02">February</option>
                     <option value="03">March</option>
@@ -45,14 +46,16 @@
                 </select>
 
                 <!-- Day Dropdown -->
-                <select name="day">
+                <select name="day" id="day">
+                    <option value="" disabled selected>Select your day </option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <!-- ... add up to 31 ... -->
                 </select>
 
                 <!-- Year Dropdown -->
-                <select name="year">
+                <select name="year" id="year">
+                    <option value="" disabled selected>Select your year </option>
                     <option value="2024">2024</option>
                     <option value="2025">2025</option>
                 </select>
@@ -67,11 +70,11 @@
 
             <!-- gender dropdown -->
 
-            <select name="gender">
+            <select name="gender" id="gender">
                 <option value="" disabled selected>Select your gender </option>
-                <option value="male">January</option>
-                <option value="female">February</option>
-                <option value="other">March</option>
+                <option value="male" >male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
                 <!-- ... add all months ... -->
             </select>
         </div>
@@ -83,7 +86,7 @@
 
             <div class="inputBox">
 
-                <input type="text" placeholder="Mobile number or email address">
+                <input type="text" placeholder="Mobile number or email address" id="emailOrMobile">
             </div>
 
             <p id="name-para">You may receive notifications from us <a href="https://www.facebook.com">link bana do</a>
@@ -97,7 +100,7 @@
 
             <div class="inputBox" id="mb-5">
 
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" id="password">
             </div>
 
             <p id="name-para">People who use our service may have uploaded your contact information to Facebook. . <a
@@ -114,6 +117,8 @@
             <a href="../Pages/login.html"><button id="already-account">Already have an account</button></a>
         </div>
     </div>
+
+    <script src="../Js/register.js"></script>
 </body>
 
 </html>
