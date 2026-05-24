@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg-Flipper</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        #bg-changer{
+            height: 40px;
+            background: #000;
+            border: none;
+            color: whitesmoke;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #bg-changer:active{
+            scale: 0.90;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div id="container">
+        <h3 id="showColorName">Color Name: Pink</h3>
+        <button id="bg-changer">Change Bg Color</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
