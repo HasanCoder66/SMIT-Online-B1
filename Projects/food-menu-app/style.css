@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.searchBox {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.searchBox > input {
+    height: 80%;
+    width: 500px;
+    padding-left: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.searchBox > button {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0px 20px;
+    height: 80%;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.searchBox > button:active{
+    scale: 0.95;
+}
+
+.left-main-parent{
+    display: flex;
+}
+
+
+.leftSidebar {
+    flex: 1;
+    height: calc(100vh - 50px);
+    padding: 25px;
+    overflow: scroll;
+}
+
+.recipeCard {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-bottom: 10px;
+}
+
+.recipeCard:hover {
+    scale: 1.05;
+    transition: all 1s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.recipeCard > img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+/* main area card */
+
+.main {
+    flex: 3;
+    height: calc(100vh - 50px);
+    padding: 25px;
+    
+}
+
+.image-parent {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 500px;
+}
+
+.image-parent > img{
+    height: 90%;
+    width: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+}
