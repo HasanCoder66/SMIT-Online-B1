@@ -13,35 +13,42 @@ let submitBtn = document.getElementById("submit")
 
 
 
+let users = JSON.parse(localStorage.getItem("users")) || []
+// console.log("tazaa tazaa local storage sai managaya howa users... -->", users);
 
-const submitHandler = () => {
-    console.log("submit handler is working..");
-
-console.log("==> ",firstName.value);
-console.log("==> ",surName.value);
-console.log("==> ",month.value);
-console.log("==> ",day.value);
-console.log("==> ",year.value);
-console.log("==> ",gender.value);
-console.log("==> ",email.value);
-console.log("==> ",password.value);
-
-
-
-// console.log("registration form sumbitted!");
-
-
-if(!firstName.value.trim() || !surName.value.trim() || !month.value.trim() || !day.value.trim() || !year.value.trim()){
-   return console.log("please fill your first and surname.");
+const sweety = (icon, title, text) => {
+   return Swal.fire({
+        icon: icon,
+        title: title,
+        text: text,
+      });
 }
 
+const submitHandler = () => {
 
+if(!firstName.value.trim() || !surName.value.trim() || !month.value.trim() || !day.value.trim() || !year.value.trim()){
+   return sweety("error", "Oops!","please fill your first and surname.");
+}
 
+let userObj = {
+firstName : firstName.value,
+surName : surName.value,
+dob :`${day.value}-${month.value}-${year.value}`,
+gender : gender.value ,
+email : email.value,
+password :  password.value
+}
 
+users.push(userObj)
 
-console.log("mai condition chlny kaa baad agy agiyaa....", month.value);
+console.log("users --> submit handler ke ander userss", users);
+localStorage.setItem("users", JSON.stringify(users))
 
+sweety("success", "Ok", "user registered successfully!")
 
+setTimeout(() => {
+window.location.href = "../Pages/login.html"
+}, [1500])
 
 firstName.value = ""
 surName.value = ""
