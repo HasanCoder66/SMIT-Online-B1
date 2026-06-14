@@ -10,5 +10,4 @@ console.log(globalVar);
 
 globalFn()
 
-
 console.log("Global Execution ends -->");
